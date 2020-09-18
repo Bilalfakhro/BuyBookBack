@@ -13,6 +13,7 @@
 		DB6D94EA2514D508004B3870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6D94E82514D508004B3870 /* Main.storyboard */; };
 		DB6D94EC2514D50D004B3870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6D94EB2514D50D004B3870 /* Assets.xcassets */; };
 		DB6D94EF2514D50D004B3870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6D94ED2514D50D004B3870 /* LaunchScreen.storyboard */; };
+		DBD672072514D9490003A860 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBD672062514D9490003A860 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DB6D94EB2514D50D004B3870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB6D94EE2514D50D004B3870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB6D94F02514D50D004B3870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBD672062514D9490003A860 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DB6D94EB2514D50D004B3870 /* Assets.xcassets */,
 				DB6D94ED2514D50D004B3870 /* LaunchScreen.storyboard */,
 				DB6D94F02514D50D004B3870 /* Info.plist */,
+				DBD672062514D9490003A860 /* GoogleService-Info.plist */,
 			);
 			path = BuyBookBack;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6D94EF2514D50D004B3870 /* LaunchScreen.storyboard in Resources */,
+				DBD672072514D9490003A860 /* GoogleService-Info.plist in Resources */,
 				DB6D94EC2514D50D004B3870 /* Assets.xcassets in Resources */,
 				DB6D94EA2514D508004B3870 /* Main.storyboard in Resources */,
 			);
@@ -291,8 +295,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bilalfakhro.BuyBookBack;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bilalfakhro.ByuBookBack;
+				PRODUCT_NAME = BuyBookBack;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -309,8 +313,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bilalfakhro.BuyBookBack;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bilalfakhro.ByuBookBack;
+				PRODUCT_NAME = BuyBookBack;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
