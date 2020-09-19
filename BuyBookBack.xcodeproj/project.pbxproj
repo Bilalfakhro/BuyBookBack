@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		DB6D94EA2514D508004B3870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6D94E82514D508004B3870 /* Main.storyboard */; };
 		DB6D94EC2514D50D004B3870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6D94EB2514D50D004B3870 /* Assets.xcassets */; };
 		DB6D94EF2514D50D004B3870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6D94ED2514D50D004B3870 /* LaunchScreen.storyboard */; };
+		DB8FAC9F2516AF1700A3CB92 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FAC9E2516AF1700A3CB92 /* SignUpViewController.swift */; };
+		DB8FACA12516AF6200A3CB92 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FACA02516AF6200A3CB92 /* LoginViewController.swift */; };
+		DB8FACA32516AF8800A3CB92 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FACA22516AF8800A3CB92 /* HomeViewController.swift */; };
+		DB8FACA62516B04F00A3CB92 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FACA52516B04F00A3CB92 /* Utilities.swift */; };
+		DB8FACA82516B07400A3CB92 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FACA72516B07400A3CB92 /* Constants.swift */; };
+		DB8FACAD2516B52500A3CB92 /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DB8FACAC2516B52500A3CB92 /* loginbg.mp4 */; };
 		DBD672072514D9490003A860 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBD672062514D9490003A860 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +35,12 @@
 		DB6D94EB2514D50D004B3870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB6D94EE2514D50D004B3870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB6D94F02514D50D004B3870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB8FAC9E2516AF1700A3CB92 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DB8FACA02516AF6200A3CB92 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DB8FACA22516AF8800A3CB92 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB8FACA52516B04F00A3CB92 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		DB8FACA72516B07400A3CB92 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB8FACAC2516B52500A3CB92 /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
 		DBD672062514D9490003A860 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +62,6 @@
 				88B8C68B7E519DB9DEFF3903 /* Pods-BuyBookBack.debug.xcconfig */,
 				2D2B70A4E6BE15E1C7E1F18F /* Pods-BuyBookBack.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,7 +96,9 @@
 			children = (
 				DB6D94E22514D508004B3870 /* AppDelegate.swift */,
 				DB6D94E42514D508004B3870 /* SceneDelegate.swift */,
-				DB6D94E62514D508004B3870 /* ViewController.swift */,
+				DB8FACA42516B03300A3CB92 /* Helpers */,
+				DB8FAC9D2516AED000A3CB92 /* Viewcontroller */,
+				DB8FACAB2516B51300A3CB92 /* Media */,
 				DB6D94E82514D508004B3870 /* Main.storyboard */,
 				DB6D94EB2514D50D004B3870 /* Assets.xcassets */,
 				DB6D94ED2514D50D004B3870 /* LaunchScreen.storyboard */,
@@ -93,6 +106,34 @@
 				DBD672062514D9490003A860 /* GoogleService-Info.plist */,
 			);
 			path = BuyBookBack;
+			sourceTree = "<group>";
+		};
+		DB8FAC9D2516AED000A3CB92 /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				DB6D94E62514D508004B3870 /* ViewController.swift */,
+				DB8FAC9E2516AF1700A3CB92 /* SignUpViewController.swift */,
+				DB8FACA02516AF6200A3CB92 /* LoginViewController.swift */,
+				DB8FACA22516AF8800A3CB92 /* HomeViewController.swift */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		DB8FACA42516B03300A3CB92 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DB8FACA52516B04F00A3CB92 /* Utilities.swift */,
+				DB8FACA72516B07400A3CB92 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DB8FACAB2516B51300A3CB92 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				DB8FACAC2516B52500A3CB92 /* loginbg.mp4 */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +199,7 @@
 				DB6D94EF2514D50D004B3870 /* LaunchScreen.storyboard in Resources */,
 				DBD672072514D9490003A860 /* GoogleService-Info.plist in Resources */,
 				DB6D94EC2514D50D004B3870 /* Assets.xcassets in Resources */,
+				DB8FACAD2516B52500A3CB92 /* loginbg.mp4 in Resources */,
 				DB6D94EA2514D508004B3870 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +255,12 @@
 			files = (
 				DB6D94E72514D508004B3870 /* ViewController.swift in Sources */,
 				DB6D94E32514D508004B3870 /* AppDelegate.swift in Sources */,
+				DB8FACA62516B04F00A3CB92 /* Utilities.swift in Sources */,
+				DB8FAC9F2516AF1700A3CB92 /* SignUpViewController.swift in Sources */,
+				DB8FACA12516AF6200A3CB92 /* LoginViewController.swift in Sources */,
 				DB6D94E52514D508004B3870 /* SceneDelegate.swift in Sources */,
+				DB8FACA32516AF8800A3CB92 /* HomeViewController.swift in Sources */,
+				DB8FACA82516B07400A3CB92 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
