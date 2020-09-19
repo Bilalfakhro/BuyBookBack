@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442CDC5E66F99DE69E170C0E /* Pods_BuyBookBack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1108FD2CF3613A454E53AFC1 /* Pods_BuyBookBack.framework */; };
 		DB6D94E32514D508004B3870 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6D94E22514D508004B3870 /* AppDelegate.swift */; };
 		DB6D94E52514D508004B3870 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6D94E42514D508004B3870 /* SceneDelegate.swift */; };
 		DB6D94E72514D508004B3870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6D94E62514D508004B3870 /* ViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1108FD2CF3613A454E53AFC1 /* Pods_BuyBookBack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuyBookBack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2B70A4E6BE15E1C7E1F18F /* Pods-BuyBookBack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBookBack.release.xcconfig"; path = "Target Support Files/Pods-BuyBookBack/Pods-BuyBookBack.release.xcconfig"; sourceTree = "<group>"; };
+		88B8C68B7E519DB9DEFF3903 /* Pods-BuyBookBack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBookBack.debug.xcconfig"; path = "Target Support Files/Pods-BuyBookBack/Pods-BuyBookBack.debug.xcconfig"; sourceTree = "<group>"; };
 		DB6D94DF2514D508004B3870 /* BuyBookBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyBookBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6D94E22514D508004B3870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB6D94E42514D508004B3870 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442CDC5E66F99DE69E170C0E /* Pods_BuyBookBack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56B429C7ADD14BFA3AD708D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88B8C68B7E519DB9DEFF3903 /* Pods-BuyBookBack.debug.xcconfig */,
+				2D2B70A4E6BE15E1C7E1F18F /* Pods-BuyBookBack.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F4B590E5911B44C2336C6AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1108FD2CF3613A454E53AFC1 /* Pods_BuyBookBack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB6D94D62514D508004B3870 = {
 			isa = PBXGroup;
 			children = (
 				DB6D94E12514D508004B3870 /* BuyBookBack */,
 				DB6D94E02514D508004B3870 /* Products */,
+				56B429C7ADD14BFA3AD708D7 /* Pods */,
+				5F4B590E5911B44C2336C6AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB6D94F32514D50D004B3870 /* Build configuration list for PBXNativeTarget "BuyBookBack" */;
 			buildPhases = (
+				5DFDFF85E0D5567E30035B7A /* [CP] Check Pods Manifest.lock */,
 				DB6D94DB2514D508004B3870 /* Sources */,
 				DB6D94DC2514D508004B3870 /* Frameworks */,
 				DB6D94DD2514D508004B3870 /* Resources */,
+				959EEADA54CD92BEE655EB66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DFDFF85E0D5567E30035B7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuyBookBack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959EEADA54CD92BEE655EB66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BuyBookBack/Pods-BuyBookBack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BuyBookBack/Pods-BuyBookBack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BuyBookBack/Pods-BuyBookBack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB6D94DB2514D508004B3870 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		DB6D94F42514D50D004B3870 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B8C68B7E519DB9DEFF3903 /* Pods-BuyBookBack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +374,7 @@
 		};
 		DB6D94F52514D50D004B3870 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D2B70A4E6BE15E1C7E1F18F /* Pods-BuyBookBack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
